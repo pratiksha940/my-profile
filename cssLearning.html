@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css learning</title>
-    <style>
+    <style>                                
+    
+        #home{ 
+            /* border-style: groove;    
+            border-width: 10px;
+            border-color: orangered; */
+            border: 5px dotted red;
+        }
         h2{
             color: mediumblue;
             font-style: oblique;
@@ -17,22 +24,39 @@
             color: brown;
             font-weight: bolder;
         }
+        #tech{
+            color: lightsalmon;
+        }
+        #agile{
+            font-style: italic;
+            color: blue;
+            background-color: aqua;
+            font-weight: bold;
+        }
+        #summary{
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
     <br>
-    <h2>&nbsp;&nbsp;Professional Summary</h2>
+    <section id="home">
+    <h2 id="summary">&nbsp;&nbsp;Professional Summary</h2>
     <br>
     <ul>
-        <li>Having 1 year of experience in developing Single page web Application using Angular 8,HTML5, CSS3,Bootstrap 5, Javascript, typescript</li><br>
+        <li>Having 1 year of experience in developing Single page web Application using <span id="tech">React,Java, Angular 8,HTML5, CSS3,Bootstrap 5, Javascript, typescript</span> </li><br>
         <li class="list">Experience on working with version control system -GIT and GitHub</li><br>
         <li class="list">Experience working with JIRA for user stories and bug tracking</li><br>
         <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li><br>
         <li class="list">Working exposure on ID's like VS code and Notepad++</li><br>
-        <li>Good Working experience under Agile methodologies environment</li><br>
+        <li>Good Working experience under <span id="agile">Agile methodologies</span> environment</li><br>
         <li>Experience in using Chrome Developer Tool for Debugging and Troubleshooting the code </li><br>
         <li>Knowledge of NodeJS</li><br>
         <li id="listlast">Ability to work with people at all levels in the program in using Chrome Developer Tool for Debugging and troubleshooting the code </li><br>
     </ul>
+    </section>
 </body>
 </html>

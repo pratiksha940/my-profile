@@ -5,17 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box</title>
     <style>
-        h2{
-            border: 5px solid blue;
-        }
-        #heading{
-            padding: 30px;
-            padding-left: 50px;
-        }
+       *{
+        box-sizing: border-box;
+       }
+       h2{
+        padding: 20px;
+        border: 2px solid green;
+       }
+       #professional{
+        padding: 30px;
+        width: 200px;
+        box-sizing: border-box;
+       }
+       #project{
+        padding: 30px;
+        width: 200px;
+        box-sizing: content-box;
+       }
+       #one{
+        font-size: 30px;
+       }
+       #two{
+        font-size: 30px;
+       }
+       #para1{
+        font-size: 1em;
+       }
+       #para2{
+        font-size: 1rem;
+       }
     </style>
 </head>
 <body>
-    <h2 id="heading">Professional Summary</h2>
-    <h2 id="heading">Projects</h2>
+    <div id="one">
+        <p id="para1">paragraph1</p>
+    </div>
+    <div id="two">
+        <p id="para2">paragraph2</p>
+    </div>
+    <h2 id="professional">Professional Summary</h2>
+    <h2 id="project">Projects</h2>
 </body>
 </html>

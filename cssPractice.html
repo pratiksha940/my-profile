@@ -50,6 +50,9 @@
     nav,a{
       font-family: "Madimi One", sans-serif;
     }
+    #projectDes::selection{
+      color: aqua;
+    }
 
     
     /* #table-head{
@@ -95,7 +98,23 @@
     td,th{
       padding: 10px;
     }
-   
+    #listSummary li{
+      list-style-type: circle;
+      padding: 5px;
+      background-color: aquamarine;
+      list-style-type: none;
+    }
+    #listSummary li::marker{
+      content: 👉;
+    }
+    .roles{
+      list-style-type: l;
+    }
+   .roles li{
+    list-style-type: lower-alpha;
+    padding: 5px;
+    background-color: aquamarine;
+   }
 
   </style>
 
@@ -125,7 +144,7 @@
     <!-- main section -->
     <section id="home">
       <h2 class="heading">Professional Summery &nbsp;&nbsp;&nbsp; </h2>
-      <ul type="none">
+      <ul id="listSummary">
         <li>
           Having 1 year of experience in developing Single page Web Application
           using Angular,HTML5,CSS3, Bootstrap 5,JavaScript,TypeScript
@@ -150,7 +169,7 @@
     <!-- Technology stack section -->
     <section id="techstack">
         <h2 class="heading">My Technology stack is</h2>
-        <h3 style="font-family: "Roboto Condensed", sans-serif;">Technology Stack</h3>
+        <h3 style="font-family: Roboto Condensed", sans-serif;">Technology Stack</h3>
         <table border="1" class="tablestack-table">
           <thead>
             <th id="table-head">Sr.No</th>
@@ -192,12 +211,12 @@
         Bootstrap, Github, Agile and JIRA</p>
     <p><strong>Team Size: </strong>06  <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Duration: </strong>
         <em> 2021-1 <sup>st</sup>-July till <u>present</u></em></p>
-    <p><strong>Project Description: </strong>This project is mainly used for student management in colleges,where it
+    <p id="projectDes"><strong>Project Description: </strong>This project is mainly used for student management in colleges,where it
          helps to manage student record like <br>student registration, student update, and to see all the list of 
          academic activities like score cars and attendance </p>
     <hr>
     <h2>Roles and Responsibilities</h2>
-    <ul type="none">
+    <ul class="roles">
         <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
         <li>Work closely with backend developers for code integration</li>
         <li>Identifying and troubleshooting issues in front end codebase</li>

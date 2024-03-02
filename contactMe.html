@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <style>
+        label,button{
+            font-size: large;
+        }
+        input[type="text"],input[type="email"]{
+            border: 5px solid blue;
+            padding: 5px 5px;
+            border-radius: 10px;
+            width: 250px;
+            text-transform: capitalize;
+            color: rgb(235, 125, 125);
+        }
+        input[type="email"]{
+            text-transform: lowercase;
+        }
+        button [type="submit"]:hover{
+            color: orange;
+            border-radius: 10px;
+            border: 5px solid blue;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>CONTACT ME</h2>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="">NAME</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">EMAIL</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label for="">QUESTIONS</label></td>
+                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><button type="submit">SEND QUE</button></td>
+                <td><button type="reset">CLEAR</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

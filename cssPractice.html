@@ -51,7 +51,8 @@
       font-family: "Madimi One", sans-serif;
     }
     #projectDes::selection{
-      color: aqua;
+      color: brown;
+      background-color: aqua;
     }
 
     
@@ -107,6 +108,9 @@
     #listSummary li::marker{
       content: 👉;
     }
+    li::marker{
+      content: ✅;
+    }
     .roles{
       list-style-type: l;
     }
@@ -114,6 +118,10 @@
     list-style-type: lower-alpha;
     padding: 5px;
     background-color: aquamarine;
+   }
+   #description::selection{
+    color: lawngreen;
+    background-color: plum;
    }
 
   </style>
@@ -211,7 +219,7 @@
         Bootstrap, Github, Agile and JIRA</p>
     <p><strong>Team Size: </strong>06  <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Duration: </strong>
         <em> 2021-1 <sup>st</sup>-July till <u>present</u></em></p>
-    <p id="projectDes"><strong>Project Description: </strong>This project is mainly used for student management in colleges,where it
+    <p id="description"><span id="projectDes">Project Description: </span>This project is mainly used for student management in colleges,where it
          helps to manage student record like <br>student registration, student update, and to see all the list of 
          academic activities like score cars and attendance </p>
     <hr>
